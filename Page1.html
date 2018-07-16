@@ -8,18 +8,34 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
   <style>
-    body {
-      background-color: #003b70;
+     @font-face {
+      font-family:'Interstate-reg';
+      src: url(Interstate-Regular.ttf) format('truetype');
+      src: url(Interstate-Regular.woff) format('woff');
+    }
+    @font-face{
+      font-family:'Interstate-light';
+      src: url(InterstateLight.ttf) format('truetype');
+    }
+
+    #grad1 {
+      height: 100vh;
+      background: #003b70;
+      /* For browsers that do not support gradients */
+      background: linear-gradient(#0081f6, #002569);
+      /* Standard syntax (must be last) */
     }
 
     h1 {
       color: white;
       font-size: 5em;
+      font-family: 'Interstate-reg';
     }
 
     h2 {
       color: white;
       font-size: 2em !important;
+      font-family: 'Interstate-light';
     }
 
     .footer {
@@ -29,18 +45,33 @@
       width: 100%;
       display: inline-block;
     }
+
+    #logo {
+      position: relative;
+    }
+
+    #logo img {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
   </style>
 
   <title>Landing Page </title>
 
+  <body>
+    <div id="grad1">
+      <div id="logo">
+        <img src="citi_logo.png" style="width:150px;height:100px;" />
+      </div>
 
-  <div class="container">
-    <center>
-      <h1 class="display-2"> Welcome to Citibank</h1>
-      <h2 class="display-4"> Please step up to the camera so we can begin </h2>
-    </center>
+      <div class="container">
+        <center>
+          <h1 class="display-2"> Welcome to Citibank</h1>
+          <h2 class="display-4"> Please step up to the camera so we can begin </h2>
+        </center>
 
-    <!-- <center>
+        <!-- <center>
     <div id="carouselCards" class="carouselCards" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -55,19 +86,25 @@
       </div>
     </div>
   </center> -->
-  <center>
-      <a href="Page2.html"><img src="camera.png" alt="credit cards" style="width:270px;height:240px;"></a>
-  </center>
+        <br>
+        <br>
+        <center>
+          <a href="Page2.html">
+            <img src="camera.png" alt="credit cards" style="width:270px;height:240px;">
+          </a>
+        </center>
 
-    <div id = "cards" class="footer">
-      <center>
-        <img src="citiCard.jpg" alt="credit cards" style="width:200px;height:150px;">
-        <img src="download (1).png" alt="credit cards" style="width:200px;height:150px;">
-        <img src="download (2).png" alt="credit cards" style="width:200px;height:150px;">
-     
-      </center>
+        <div id="cards" class="footer">
+          <center>
+            <!-- <img src="vg_atm07.png" alt="credit cards" style="width:1000px;height:150px;"> -->
+            <!-- <img src="citiCard.jpg" alt="credit cards" style="width:200px;height:150px;">
+            <img src="download (1).png" alt="credit cards" style="width:200px;height:150px;">
+            <img src="download (2).png" alt="credit cards" style="width:200px;height:150px;"> -->
+
+          </center>
+        </div>
+      </div>
     </div>
-  </div>
   </body>
 
 </html>

@@ -8,34 +8,153 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
   <style>
-    body {
+    /* body {
       background-color: #003b70;
+    } */
+    @font-face {
+      font-family:'Interstate-reg';
+      src: url(Interstate-Regular.ttf) format('truetype');
+      src: url(Interstate-Regular.woff) format('woff');
     }
+    @font-face{
+      font-family:'Interstate-light';
+      src: url(InterstateLight.ttf) format('truetype');
+    }
+    #grad1 {
+      height: 100vh;
+      background: #003b70;
+      /* For browsers that do not support gradients */
+      background: radial-gradient(#535269, #00040a);
+      /* Standard syntax (must be last) */
+    }
+    #exit {
+      position: fixed;
+      bottom: 0px;
+      right: 0px; 
+  }
 
     h1 {
       color: white;
       font-size: 5em;
+      font-family: 'Interstate-reg';
     }
 
     h2 {
       color: white;
       font-size: 2em !important;
+      font-family: 'Interstate-light';
+    }
+
+    h3 {
+      color: white;
+      font-family:'Interstate-light';
     }
 
     
+
+    .btn-lg {
+      padding: 30px 30px;
+      font-size: 20px;
+      border-radius: 3px;
+      border:0;
+      width: 250px;
+      height: 80px;
+      margin: 0 auto;
+      line-height: 0px;
+      text-align: center;
+      background-color:white;
+      box-shadow: 5px 10px 25px #535269;
+      background-color: #13ACED;
+    }
+
+    .info {
+      align-content: left;
+    }
+    .float-left{
+      text-align:left;
+    }
+
   </style>
 
-  <title>Landing Page </title>
+  <title>Page 2 </title>
+
+  <body>
+  <div id="grad1">
+    <div class = "container">
+      <div class ="row">
+        <div id="logo">
+          <img src="citi_logo.png" style="width:150px;height:100px;"   />
+        </div>
+      </div>
+      <div class = "row">
+        <br>
+        <br>
+        <br>
+      </div>
+          <div class = "row">
+            <div class="col-sm-3">
+                <div class="row">
+                  <button type="button" class="btn btn-light btn-lg" role="button"> Withdrawal </button>
+                </div>
+                <br>
+                <div class="row">
+                  <button type="button" class="btn btn-light btn-lg" role="button"> Balance & Statement </button>
+                </div>
+                <br>
+                <div class="row">
+                  <a href="fastcash.html" class="btn btn-light btn-lg" role="button"> Fast Cash </a>
+                </div>
+            </div>
+              <div class="col-sm-3">
+                <div class="row">
+                  <button type="button" class="btn btn-light btn-lg" role="button"> Deposit </button>
+                </div>
+                <br>
+                <div class="row">
+                  <button type="button" class="btn btn-light btn-lg" role="button"> Transfer </button>
+                </div>
+              
+              </div>
+            </div>
+          </div>
+          <div id = "exit">
+              <a href="Page1.html" style="background-color: #00bcf1;" class="btn btn-light btn-sm" role="button"> Exit </a>
+          </div>
+        </div>
+  
+      
+
+      <!-- <center>
+        <h1 class="display-2"> Citibank ATM</h1>
+        <h2 class="display-4"> This is the card page </h2>
+      <br>
+      <br>
+      <center>
+        <div class="container" id="buttons">
+          <div class="row">
+            <div class="col-md-5">
+              <div class="float-left">
+                <h3><b>Name:</b> Leany Singh</h3>
+                <br>
+                <h3><b>Account:</b> Checkings</h3>
+                <br>
+                <h3><b>Balance:</b> 10,560</h3>
+                <br>
+              </div>
+            </div> -->
+
+            
 
 
-  <div class="container">
-    <center>
-      <h1 class="display-2"> Welcome to Citibank</h1>
-      <h2 class="display-4"> This is the cards page </h2>
+
+
+
+        </div>
+    </div>
+
     </center>
 
-    
-</div>
+    </div>
   </body>
 
 </html>
