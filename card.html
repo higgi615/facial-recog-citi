@@ -11,15 +11,29 @@
     /* body {
       background-color: #003b70;
     } */
+
     @font-face {
-      font-family:'Interstate-reg';
+      font-family: 'Interstate-reg';
       src: url(Interstate-Regular.ttf) format('truetype');
       src: url(Interstate-Regular.woff) format('woff');
     }
-    @font-face{
-      font-family:'Interstate-light';
+
+    @font-face {
+      font-family: 'Interstate-light';
       src: url(InterstateLight.ttf) format('truetype');
     }
+
+    #vert {
+     
+    position:relative;
+      left: 30px;
+    }
+    #exit{
+      position:relative;
+      left: 115px;
+      bottom: 0px;
+    }
+
     #grad1 {
       height: 100vh;
       background: #003b70;
@@ -27,11 +41,13 @@
       background: radial-gradient(#535269, #00040a);
       /* Standard syntax (must be last) */
     }
-    #exit {
-      position: fixed;
-      bottom: 0px;
-      right: 0px; 
-  }
+
+  
+  
+
+    hr {
+      background-color: white;
+    }
 
     h1 {
       color: white;
@@ -47,84 +63,126 @@
 
     h3 {
       color: white;
-      font-family:'Interstate-light';
+      font-family: 'Interstate-light';
     }
 
-    
+
 
     .btn-lg {
       padding: 30px 30px;
       font-size: 20px;
+      font-family:'Interstate-reg';
       border-radius: 3px;
-      border:0;
+      border: 0;
       width: 250px;
       height: 80px;
-      margin: 0 auto;
-      line-height: 0px;
+      margin: auto;
+      line-height: center;
       text-align: center;
-      background-color:white;
-      box-shadow: 5px 10px 25px #535269;
       background-color: #13ACED;
+      color: white;
+    }
+
+    .btn-sm{
+      border: 0;
+      width: 80px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      font-size: 20px;
+      font-family:'Interstate-reg';
+      background-color: #13ACED;
+      color: white;
+
     }
 
     .info {
       align-content: left;
     }
-    .float-left{
-      text-align:left;
+
+    .float-left {
+      text-align: left;
+    }
+    
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 30;
+      width: 100%;
+      display: inline-block;
     }
 
   </style>
 
-  <title>Page 2 </title>
+  <title>Card </title>
 
   <body>
-  <div id="grad1">
-    <div class = "container">
-      <div class ="row">
-        <div id="logo">
-          <img src="citi_logo.png" style="width:150px;height:100px;"   />
-        </div>
-      </div>
-      <div class = "row">
-        <br>
-        <br>
-        <br>
-      </div>
-          <div class = "row">
-            <div class="col-sm-3">
-                <div class="row">
-                  <button type="button" class="btn btn-light btn-lg" role="button"> Withdrawal </button>
-                </div>
-                <br>
-                <div class="row">
-                  <button type="button" class="btn btn-light btn-lg" role="button"> Balance & Statement </button>
-                </div>
-                <br>
-                <div class="row">
-                  <a href="fastcash.html" class="btn btn-light btn-lg" role="button"> Fast Cash </a>
-                </div>
-            </div>
-              <div class="col-sm-3">
-                <div class="row">
-                  <button type="button" class="btn btn-light btn-lg" role="button"> Deposit </button>
-                </div>
-                <br>
-                <div class="row">
-                  <button type="button" class="btn btn-light btn-lg" role="button"> Transfer </button>
-                </div>
-              
-              </div>
-            </div>
-          </div>
-          <div id = "exit">
-              <a href="Page1.html" style="background-color: #00bcf1;" class="btn btn-light btn-sm" role="button"> Exit </a>
+    <div id="grad1">
+      <div class="container">
+        <div class="row" id="vert">
+          <div id="logo">
+            <img src="citi_logo.png" style="width:150px;height:100px;" />
           </div>
         </div>
-  
+        <div class="row">
+          <br>
+          <br>
+        </div>
+        <div class="row" id="vert">
+          <div class="col-sm-3">
+            <div class="row">
+              <button type="button" class="btn btn-light btn-lg" role="button"> Withdrawal </button>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+              <button type="button" class="btn btn-light btn-lg" role="button"> Balance & Statement </button>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+              <a href="fastcash.html" class="btn btn-light btn-lg" role="button"> Fast Cash </a>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="row">
+              <button type="button" class="btn btn-light btn-lg" role="button"> Deposit </button>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+              <button type="button" class="btn btn-light btn-lg" role="button"> Transfer </button>
+            </div>
+          </div>
+          <div class = "col-sm-2"></div>
+          <div class = "col-md-4">
+              <div class="float-left">
+                  <h3><b>Name:</b> Leany Singh</h3>
+                  <br>
+                  <h3><b>Account:</b> Checkings</h3>
+                  <br>
+                  <h3><b>Balance:</b> 10,560</h3>
+                  <br>
+                </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="footer">
+        <hr>
+        <div id = "exit">
+        <a href="Page1.html" class="btn btn-light btn-sm" role="button"> Exit </a>
+      </div> 
+      </div>
+    </div>
       
 
-      <!-- <center>
+    </div>
+
+
+
+    <!-- <center>
         <h1 class="display-2"> Citibank ATM</h1>
         <h2 class="display-4"> This is the card page </h2>
       <br>
@@ -142,19 +200,6 @@
                 <br>
               </div>
             </div> -->
-
-            
-
-
-
-
-
-        </div>
-    </div>
-
-    </center>
-
-    </div>
   </body>
 
 </html>
