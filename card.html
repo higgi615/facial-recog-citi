@@ -24,14 +24,15 @@
     }
 
     #vert {
-     
-    position:relative;
+
+      position: relative;
       left: 30px;
     }
-    #exit{
-      position:relative;
-      left: 115px;
+
+    #exit {
+      position: relative;
       bottom: 0px;
+      left: 9%;
     }
 
     #grad1 {
@@ -42,8 +43,8 @@
       /* Standard syntax (must be last) */
     }
 
-  
-  
+
+
 
     hr {
       background-color: white;
@@ -51,7 +52,7 @@
 
     h1 {
       color: white;
-      font-size: 5em;
+      font-size: 2.2em;
       font-family: 'Interstate-reg';
     }
 
@@ -63,6 +64,7 @@
 
     h3 {
       color: white;
+      font-size: 24px;
       font-family: 'Interstate-light';
     }
 
@@ -71,7 +73,7 @@
     .btn-lg {
       padding: 30px 30px;
       font-size: 20px;
-      font-family:'Interstate-reg';
+      font-family: 'Interstate-reg';
       border-radius: 3px;
       border: 0;
       width: 250px;
@@ -83,14 +85,14 @@
       color: white;
     }
 
-    .btn-sm{
+    .btn-sm {
       border: 0;
       width: 80px;
       height: 50px;
       text-align: center;
       line-height: 50px;
       font-size: 20px;
-      font-family:'Interstate-reg';
+      font-family: 'Interstate-reg';
       background-color: #13ACED;
       color: white;
 
@@ -103,15 +105,14 @@
     .float-left {
       text-align: left;
     }
-    
+
     .footer {
       position: fixed;
-      left: 0;
+
       bottom: 30;
       width: 100%;
       display: inline-block;
     }
-
   </style>
 
   <title>Card </title>
@@ -120,15 +121,37 @@
     <div id="grad1">
       <div class="container">
         <div class="row" id="vert">
-          <div id="logo">
-            <img src="citi_logo.png" style="width:150px;height:100px;" />
-          </div>
+          <img src="citi_logo.png" style="width:150px;height:100px;" />
         </div>
         <div class="row">
           <br>
           <br>
         </div>
         <div class="row" id="vert">
+          <div class="col-md-4">
+            <div class="float-left">
+
+              <h1>
+                <b>Name:</b>
+              </h1>
+              <h3>Leany Singh</h3>
+              <br>
+
+              <h1>
+                <b>Account:</b>
+              </h1>
+              <h3>Checkings</h3>
+              <br>
+
+
+              <h1>
+                <b>Balance:</b>
+              </h1>
+              <h3>10,560</h3>
+              <br>
+            </div>
+          </div>
+          
           <div class="col-sm-3">
             <div class="row">
               <button type="button" class="btn btn-light btn-lg" role="button"> Withdrawal </button>
@@ -154,29 +177,20 @@
               <button type="button" class="btn btn-light btn-lg" role="button"> Transfer </button>
             </div>
           </div>
-          <div class = "col-sm-2"></div>
-          <div class = "col-md-4">
-              <div class="float-left">
-                  <h3><b>Name:</b> Leany Singh</h3>
-                  <br>
-                  <h3><b>Account:</b> Checkings</h3>
-                  <br>
-                  <h3><b>Balance:</b> 10,560</h3>
-                  <br>
-                </div>
-          </div>
+
+
 
         </div>
       </div>
 
       <div class="footer">
         <hr>
-        <div id = "exit">
-        <a href="Page1.html" class="btn btn-light btn-sm" role="button"> Exit </a>
-      </div> 
+        <div id="exit">
+          <a href="Page1.html" class="btn btn-light btn-sm" role="button"> Exit </a>
+        </div>
       </div>
     </div>
-      
+
 
     </div>
 
