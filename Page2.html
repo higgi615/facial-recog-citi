@@ -2,33 +2,44 @@
 <html>
 
 <head>
-  <link rel="stylesheet" type="text/css" href="styleSheet.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
   <style>
     @font-face {
-      font-family:'Interstate-reg';
+      font-family: 'Interstate-reg';
       src: url(Interstate-Regular.ttf) format('truetype');
       src: url(Interstate-Regular.woff) format('woff');
     }
-    @font-face{
-      font-family:'Interstate-light';
+
+    @font-face {
+      font-family: 'Interstate-light';
       src: url(InterstateLight.ttf) format('truetype');
     }
+
     #grad1 {
       height: 100vh;
       background: #003b70;
       /* For browsers that do not support gradients */
-      background: linear-gradient(#00bcf1, #002d71);
+      background: radial-gradient(#535269, #00040a);
       /* Standard syntax (must be last) */
+    }
+
+    #vert {
+
+      position: relative;
+      left: 30px;
+    }
+
+    hr {
+      background-color: white;
     }
 
     h1 {
       color: white;
       font-size: 5em;
-      font-family:'Interstate-reg'
+      font-family: 'Interstate-reg'
     }
 
     h2 {
@@ -37,84 +48,112 @@
       font-family: 'Interstate-Light'
     }
 
-    .container {
-      margin-top: 10px;
-      /* padding: 0px 275px; */
-    }
+
 
     .btn-lg {
-      padding: 30px 30px;
-      font-size: 20px;
-      border-radius: 3px;
+      /* padding: 30px 30px;
+      margin: auto;
+     */
       border: 0;
-      width: 250px;
-      height: 80px;
-      margin: 0 auto;
-      line-height: 0px;
+      font-family: 'Interstate-light';
+      font-size: 25px;
+      width: 350px;
+      height: 100px;
       text-align: center;
+      line-height: 75px;
+      font-family: 'Interstate-reg';
+      background-color: #13ACED;
+      color: white;
+    }
+
+    #vert {
+
+      position: relative;
+      left: 24px;
     }
 
     #logo {
       position: relative;
+      left: 10px;
     }
 
-    #logo img {
-      position: absolute;
-      top: 0px;
-      left: 0px;
+    #exit {
+      position: relative;
+      bottom: 0px;
+      left: 8%;
     }
 
-    /* .divider {
-      width: 5px;
-      height: auto;
+    .btn-sm {
+      border: 0;
+      width: 80px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      font-size: 20px;
+      font-family: 'Interstate-reg';
+      background-color: #13ACED;
+      color: white;
+
+    }
+
+    .footer {
+      position: fixed;
+      bottom: 30;
+      width: 100%;
       display: inline-block;
-    } */
+    }
   </style>
 
   <title>Page 2 </title>
 
   <body>
     <div id="grad1">
-
-      <div id="logo">
-        <img src="citi_logo.png" style="width:150px;height:100px;" />
-      </div>
-      <center>
-        <h1 class="display-2"> Citibank ATM</h1>
-        <h2 class="display-4"> Welcome "Name", Please insert your card or proceed to fast cash </h2>
-      </center>
-      <br>
-      <br>
-      <center>
-        <div class="container" id="buttons">
-          <div class="row">
-            <div class="col-md-5">
-              <br>
-              <br>
-              <br>
-              <br>
-              <h2 class="display-4"> Welcome "Name", Please insert your card or proceed to fast cash </h2>
-              
+      <div class="container">
+        <div class="row" id="logo">
+          <img src="citi_logo.png" style="width:150px;height:100px;" />
+        </div>
+        <div class="row">
+          <br>
+        </div>
+        <div class="row">
+          <div class="col-md-6" id="vert">
+            <div class="row">
+              <h2 class="display-4" style="text-align: justify"> Welcome "Name", Please insert your card or proceed to fast cash </h2>
             </div>
-            <div class="col-md-5">
-              <div class="float-right">
-                <div class="row">
-                  <a href="card.html" class="btn btn-light btn-lg" role="button"> Insert Card </a>
-                </div>
-                <br>
-                <div class="row">
-                  <a href="fastcash.html" class="btn btn-light btn-lg" role="button"> Fast Cash </a>
-                </div>
-                <br>
-                <div class="row">
-                  <a href="Page1.html"  class="btn btn-light btn-lg" role="button"> Exit </a>
-                </div>
+            <div class = "row">
+              <br>
+              <br>
+            </div>
+            <div class="row">
+              <img src="debitcard.png" style="width:300px;height:250px;" />
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-5">
+            <div class="float-right">
+              <div class="row">
+                <a href="card.html" class="btn btn-light btn-lg" role="button">
+                  Insert Card
+                </a>
+              </div>
+              <br>
+              <br>
+              <br>
+              <div class="row">
+                <a href="fastcash.html" class="btn btn-light btn-lg" role="button">
+                  Fast Cash
+                </a>
               </div>
             </div>
           </div>
         </div>
-
-      </center>
+      </div>
+        <div class="footer">
+          <hr>
+          <div id="exit">
+            <a href="Page1.html" class="btn btn-light btn-sm" role="button"> Exit </a>
+          </div>
+        </div>
     </div>
   </body>
 
