@@ -8,4 +8,4 @@
 
 3. Run ```npm i``` in command line.
 
-4. Navigate to https://localhost:8000 to view app!
+4. Navigate to http://localhost:8000 to view app!
