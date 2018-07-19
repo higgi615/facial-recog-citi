@@ -8,6 +8,7 @@ router.use(function(req, res, next) {
   next();
 });
 
+// Routes for the different pages
 router.get("/", function(req, res) {
   res.sendFile(__dirname + "/" + "Page1.html");
 });
@@ -28,7 +29,8 @@ router.get("/fastcash", function(req, res) {
   res.sendFile(__dirname + "/" + "fastcash.html");
 });
 
-app.use(express.static(path.join(__dirname, "public")));
+// Serve the static files
+app.use("/public", express.static(__dirname + "/public"));
 
 app.use("/", router);
 

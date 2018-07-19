@@ -9,20 +9,20 @@
   <style>
     @font-face {
       font-family:'Interstate-reg';
-      src: url(Interstate-Regular.ttf) format('truetype');
-      src: url(Interstate-Regular.woff) format('woff');
+      src: url(/public/Interstate-Regular.ttf) format('truetype');
+      src: url(/public/Interstate-Regular.woff) format('woff');
     }
     @font-face{
       font-family:'Interstate-light';
-      src: url(InterstateLight.ttf) format('truetype');
+      src: url(/public/InterstateLight.ttf) format('truetype');
     }
     #grad1 {
-      height: 100vh;
-      background: #003b70;
-      /* For browsers that do not support gradients */
-      background: linear-gradient(#0081f6, #002569);
-      /* Standard syntax (must be last) */
-    }
+            height: 100vh;
+            background: #003b70;
+            /* For browsers that do not support gradients */
+            background: radial-gradient(#535269, #00040a);
+            /* Standard syntax (must be last) */
+        }
 
     h1 {
       color: white;
@@ -70,7 +70,7 @@
   <body>
     <div id="grad1">
       <div id="logo">
-        <img src="public/citi_logo.png" style="width:150px;height:100px;" />
+        <img src="/public/citi_logo.png" style="width:150px;height:100px;" />
       </div>
 
       <div class="container">
@@ -88,9 +88,6 @@
                   <input type="password" maxlength="1"/>
               </form> 
           </center>
-        <div id="cards" class="footer">
-            <a href="Page1" style="background-color: rgb(240, 164, 164)" class="btn btn-light btn-lg" role="button"> Exit </a>
-        </div>
       </div>
     </div>
   </body>
