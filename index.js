@@ -10,23 +10,23 @@ router.use(function(req, res, next) {
 
 // Routes for the different pages
 router.get("/", function(req, res) {
-  res.sendFile(__dirname + "/" + "Page1.html");
+  res.sendFile(__dirname + "/" + "views/Page1.html");
 });
 
-router.get("/page1", function(req, res) {
-  res.sendFile(__dirname + "/" + "Page1.html");
+router.get("/views/page1", function(req, res) {
+  res.sendFile(__dirname + "/" + "views/Page1.html");
 });
 
-router.get("/page2", function(req, res) {
-  res.sendFile(__dirname + "/" + "Page2.html");
+router.get("/views/page2", function(req, res) {
+  res.sendFile(__dirname + "/" + "views/Page2.html");
 });
 
-router.get("/card", function(req, res) {
-  res.sendFile(__dirname + "/" + "card.html");
+router.get("/views/card", function(req, res) {
+  res.sendFile(__dirname + "/" + "views/card.html");
 });
 
-router.get("/fastcash", function(req, res) {
-  res.sendFile(__dirname + "/" + "fastcash.html");
+router.get("/views/fastcash", function(req, res) {
+  res.sendFile(__dirname + "/" + "views/fastcash.html");
 });
 
 // Serve the static files
