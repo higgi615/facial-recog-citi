@@ -9,26 +9,28 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
   <style>
     @font-face {
-      font-family:'Interstate-reg';
+      font-family: 'Interstate-reg';
       src: url(Interstate-Regular.ttf) format('truetype');
       src: url(Interstate-Regular.woff) format('woff');
     }
-    @font-face{
-      font-family:'Interstate-light';
+
+    @font-face {
+      font-family: 'Interstate-light';
       src: url(InterstateLight.ttf) format('truetype');
     }
+
     #grad1 {
       height: 100vh;
       background: #003b70;
       /* For browsers that do not support gradients */
-      background: linear-gradient(#00bcf1, #002d71);
+      background: radial-gradient(#535269, #00040a);
       /* Standard syntax (must be last) */
     }
 
     h1 {
       color: white;
       font-size: 5em;
-      font-family:'Interstate-reg'
+      font-family: 'Interstate-reg'
     }
 
     h2 {
@@ -38,20 +40,26 @@
     }
 
     .container {
-      margin-top: 10px;
+      margin-top: 100px;
       /* padding: 0px 275px; */
     }
+   
 
     .btn-lg {
       padding: 30px 30px;
       font-size: 20px;
       border-radius: 3px;
       border: 0;
-      width: 250px;
-      height: 80px;
+      width: 400px;
+      height: 150px;
       margin: 0 auto;
       line-height: 0px;
       text-align: center;
+      box-shadow: 5px 10px 25px #535269;
+      background-color: rgb(0,189,242) ;
+    }
+    .btn-lg:hover{
+     background: #01134e;
     }
 
     #logo {
@@ -60,8 +68,29 @@
 
     #logo img {
       position: absolute;
-      top: 0px;
-      left: 0px;
+      top: 20px;
+      left: 70px;
+    }
+
+    #exit {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+    }
+
+    .btn-lg-exit {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      padding: 30px 30px;
+      font-size: 20px;
+      border-radius: 3px;
+      border: 0;
+      width: 150px;
+      height: 60px;
+      margin: 0 auto;
+      line-height: 0px;
+      text-align: center;
     }
 
     /* .divider {
@@ -75,46 +104,56 @@
 
   <body>
     <div id="grad1">
-
-      <div id="logo">
-        <img src="citi_logo.png" style="width:150px;height:100px;" />
+      <div class="row">
+        <div id="logo">
+          <img src="citi_logo.png" style="width:150px;height:100px;" />
+        </div>
+        <div id="exit">
+          <a href="Page1.html" style="background-color: #00bcf1;" class="btn btn-light btn-lg-exit" role="button"> Exit </a>
+        </div>
       </div>
-      <center>
+      <!-- <center>
         <h1 class="display-2"> Citibank ATM</h1>
         <h2 class="display-4"> Welcome "Name", Please insert your card or proceed to fast cash </h2>
-      </center>
+      </center> -->
       <br>
       <br>
       <center>
         <div class="container" id="buttons">
           <div class="row">
-            <div class="col-md-5">
-              <br>
-              <br>
-              <br>
-              <br>
-              <h2 class="display-4"> Welcome "Name", Please insert your card or proceed to fast cash </h2>
-              
-            </div>
-            <div class="col-md-5">
-              <div class="float-right">
+            <div class="col-md-3">
+              <div class="float-left" style="left: 10px">
                 <div class="row">
-                  <a href="card.html" class="btn btn-light btn-lg" role="button"> Insert Card </a>
+                  <a href="card.html" class="btn btn-light btn-lg" role="button">
+                    <h2> Insert Card</h2>
+                  </a>
                 </div>
                 <br>
                 <div class="row">
-                  <a href="fastcash.html" class="btn btn-light btn-lg" role="button"> Fast Cash </a>
-                </div>
-                <br>
-                <div class="row">
-                  <a href="Page1.html"  class="btn btn-light btn-lg" role="button"> Exit </a>
+                  <a href="fastcash.html" class="btn btn-light btn-lg" role="button">
+                    <h2> Fast Cash</h2>
+                  </a>
                 </div>
               </div>
             </div>
+            <div class="col-md-7" style = "left: 180px">
+              <div class = "row">
+                <h2 class="display-4" style="text-align: justify"> Welcome "Name", Please insert your card or proceed to fast cash </h2>
+              </div>
+              <br>
+              <br>
+              <br>
+              <div class ="row">
+              <img src="debitcard.png" style="width:300px;height:250px;"/>
+            </div>
+            </div>
+            
+
           </div>
         </div>
 
       </center>
+
     </div>
   </body>
 

@@ -8,34 +8,92 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
   <style>
-    body {
-      background-color: #003b70;
+    @font-face {
+      font-family:'Interstate-reg';
+      src: url(Interstate-Regular.ttf) format('truetype');
+      src: url(Interstate-Regular.woff) format('woff');
+    }
+    @font-face{
+      font-family:'Interstate-light';
+      src: url(InterstateLight.ttf) format('truetype');
+    }
+    #grad1 {
+      height: 100vh;
+      background: #003b70;
+      /* For browsers that do not support gradients */
+      background: linear-gradient(#0081f6, #002569);
+      /* Standard syntax (must be last) */
     }
 
     h1 {
       color: white;
       font-size: 5em;
+      font-family: 'Interstate-reg';
     }
 
     h2 {
       color: white;
       font-size: 2em !important;
+      font-family: 'Interstate-light';
     }
 
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      display: inline-block;
+    }
+
+    #logo {
+      position: relative;
+    }
+
+    #logo img {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
     
+    form#ios input[type=password]{
+    height: 50px;
+    width: 40px;
+    text-align: center;
+    font-size: 2em;
+    border: 0px ;
+    background-color: #003B70;
+    color: white;
+} 
   </style>
 
-  <title>Landing Page </title>
+  <title>Fastcash </title>
 
+  <body>
+    <div id="grad1">
+      <div id="logo">
+        <img src="citi_logo.png" style="width:150px;height:100px;" />
+      </div>
 
-  <div class="container">
-    <center>
-      <h1 class="display-2"> Welcome to Citibank</h1>
-      <h2 class="display-4"> This is the fast cash page </h2>
-    </center>
-
-    
-</div>
+      <div class="container">
+        <center>
+          <h1 class="display-2">Citibank ATM</h1>
+          <!-- <h2 class="display-3">FastCash page</h2> -->
+          <br>
+          <h2 class="display-4">Please use the keypad to enter your PIN </h2>
+          <h2 class="display-4">and press ENTER to continue </h2>
+          <br>
+              <form id="ios">
+                  <input type="password" maxlength="1" />
+                  <input type="password" maxlength="1"/>
+                  <input type="password" maxlength="1"/>
+                  <input type="password" maxlength="1"/>
+              </form> 
+          </center>
+        <div id="cards" class="footer">
+            <a href="Page1.html" style="background-color: rgb(240, 164, 164)" class="btn btn-light btn-lg" role="button"> Exit </a>
+        </div>
+      </div>
+    </div>
   </body>
 
 </html>
