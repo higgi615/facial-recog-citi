@@ -26,6 +26,12 @@
       /* Standard syntax (must be last) */
     }
 
+    #vert {
+
+      position: relative;
+      left: 30px;
+    }
+
     hr {
       background-color: white;
     }
@@ -50,7 +56,7 @@
      */
       border: 0;
       font-family: 'Interstate-light';
-      font-size: 20px;
+      font-size: 25px;
       width: 350px;
       height: 100px;
       text-align: center;
@@ -58,7 +64,8 @@
       font-family: 'Interstate-reg';
       background-color: #13ACED;
       color: white;
-     }
+    }
+
     #vert {
 
       position: relative;
@@ -67,18 +74,13 @@
 
     #logo {
       position: relative;
-    }
-
-    #logo img {
-      position: absolute;
-      top: 20px;
-      left: 70px;
+      left: 10px;
     }
 
     #exit {
       position: relative;
       bottom: 0px;
-      left: 9%;
+      left: 8%;
     }
 
     .btn-sm {
@@ -106,54 +108,52 @@
 
   <body>
     <div id="grad1">
-        <div class="container">
+      <div class="container">
+        <div class="row" id="logo">
+          <img src="citi_logo.png" style="width:150px;height:100px;" />
+        </div>
+        <div class="row">
+          <br>
+        </div>
+        <div class="row">
+          <div class="col-md-6" id="vert">
             <div class="row">
-                <img src="citi_logo.png" style="width:150px;height:100px;" />
+              <h2 class="display-4" style="text-align: justify"> Welcome "Name", Please insert your card or proceed to fast cash </h2>
             </div>
             <div class = "row">
               <br>
               <br>
             </div>
-          <div class="row">
-            <div class="col-md-3">
-              <div class="float-left">
-                <div class="row">
-                 <a href="card.html" class="btn btn-light btn-lg" role="button">
-                    Insert Card
-                  </a>
-                </div>
-                <br>
-                <br>
-                <div class="row">
-                  <a href="fastcash.html" class="btn btn-light btn-lg" role="button">
-                    Fast Cash
-                  </a>
-                </div>
-              </div>
+            <div class="row">
+              <img src="debitcard.png" style="width:300px;height:250px;" />
             </div>
-            <div class="col-md-7" style="left: 180px">
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-5">
+            <div class="float-right">
               <div class="row">
-                <h2 class="display-4" style="text-align: justify"> Welcome "Name", Please insert your card or proceed to fast cash </h2>
+                <a href="card.html" class="btn btn-light btn-lg" role="button">
+                  Insert Card
+                </a>
               </div>
               <br>
               <br>
               <br>
               <div class="row">
-                <img src="debitcard.png" style="width:300px;height:250px;" />
+                <a href="fastcash.html" class="btn btn-light btn-lg" role="button">
+                  Fast Cash
+                </a>
               </div>
             </div>
-
-
           </div>
         </div>
-
-      
-      <div class="footer">
-        <hr>
-        <div id="exit">
-          <a href="Page1.html" class="btn btn-light btn-sm" role="button"> Exit </a>
-        </div>
       </div>
+        <div class="footer">
+          <hr>
+          <div id="exit">
+            <a href="Page1.html" class="btn btn-light btn-sm" role="button"> Exit </a>
+          </div>
+        </div>
     </div>
   </body>
 
