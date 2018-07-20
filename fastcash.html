@@ -21,7 +21,7 @@
       height: 100vh;
       background: #003b70;
       /* For browsers that do not support gradients */
-      background: linear-gradient(#0081f6, #002569);
+      background: radial-gradient(#535269, #00040a);
       /* Standard syntax (must be last) */
     }
 
@@ -40,20 +40,41 @@
     .footer {
       position: fixed;
       left: 0;
-      bottom: 0;
+      bottom:20px;
       width: 100%;
       display: inline-block;
     }
 
-    #logo {
-      position: relative;
-    }
+    
 
     #logo img {
       position: absolute;
-      top: 0px;
-      left: 0px;
+      top: 5%px;
+      left: 6%;
     }
+
+    #exit {
+      position: relative;
+      bottom: 6px;
+      left: 8%;
+    }
+
+    .btn-sm {
+      border: 0;
+      width: 80px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      font-size: 20px;
+      font-family: 'Interstate-reg';
+      background-color: #13ACED;
+      color: white;
+
+    }
+
+    hr{
+    background-color: white;
+  }
     
     form#ios input[type=password]{
     height: 50px;
@@ -61,16 +82,25 @@
     text-align: center;
     font-size: 2em;
     border: 0px ;
-    background-color: #003B70;
+    background-color: #13ACED;;
     color: white;
 } 
   </style>
+  <script>
+    function autotab(current,to){
+      if (current.getAttribute && 
+        current.value.length==current.getAttribute("maxlength")) {
+          to.focus() 
+          }
+  }
+  </script>
 
   <title>Fastcash </title>
 
   <body>
     <div id="grad1">
       <div id="logo">
+        <br>
         <img src="citi_logo.png" style="width:150px;height:100px;" />
       </div>
 
@@ -79,19 +109,24 @@
           <h1 class="display-2">Citibank ATM</h1>
           <!-- <h2 class="display-3">FastCash page</h2> -->
           <br>
+          <br>
+          <br>
           <h2 class="display-4">Please use the keypad to enter your PIN </h2>
           <h2 class="display-4">and press ENTER to continue </h2>
           <br>
-              <form id="ios">
-                  <input type="password" maxlength="1" />
-                  <input type="password" maxlength="1"/>
-                  <input type="password" maxlength="1"/>
-                  <input type="password" maxlength="1"/>
+              <form id="ios" name=pass>
+                  <input type="password" name = "pin0" onKeyup="autotab(this, document.pass.pin1)" class= "inputs" maxlength="1" />
+                  <input type="password" name = "pin1" onKeyup="autotab(this, document.pass.pin2)" class= "inputs" maxlength="1"/>
+                  <input type="password" name = "pin2" onKeyup="autotab(this, document.pass.pin3)" class= "inputs" maxlength="1"/>
+                  <input type="password" name = "pin3" class= "inputs" maxlength="1"/>
               </form> 
           </center>
-        <div id="cards" class="footer">
-            <a href="Page1.html" style="background-color: rgb(240, 164, 164)" class="btn btn-light btn-lg" role="button"> Exit </a>
-        </div>
+         
+        <div class="footer">
+          <hr>
+          <div id="exit">
+              <a href="Page1.html" class="btn btn-light btn-sm" role="button"> Exit </a>
+            </div>        </div>
       </div>
     </div>
   </body>
