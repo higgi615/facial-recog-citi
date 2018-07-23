@@ -6,6 +6,6 @@
 
 2. Clone the repository. ```git clone ...```
 
-3. Run ```npm i``` in command line.
+3. Run ```node index.js``` in command line.
 
 4. Navigate to http://localhost:8000 to view app!
