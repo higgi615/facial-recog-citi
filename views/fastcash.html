@@ -60,10 +60,19 @@
     text-align: center;
     font-size: 2em;
     border: 0px ;
-    background-color: #003B70;
+    background-color: #13ACED;
     color: white;
 } 
   </style>
+
+  <script>
+    function autotab(current,to){
+      if (current.getAttribute && 
+        current.value.length==current.getAttribute("maxlength")) {
+          to.focus() 
+          }
+  }
+  </script>
 
   <title>Fastcash </title>
 
@@ -81,12 +90,12 @@
           <h2 class="display-4">Please use the keypad to enter your PIN </h2>
           <h2 class="display-4">and press ENTER to continue </h2>
           <br>
-              <form id="ios">
-                  <input type="password" maxlength="1" />
-                  <input type="password" maxlength="1"/>
-                  <input type="password" maxlength="1"/>
-                  <input type="password" maxlength="1"/>
-              </form> 
+          <form id="ios" name=pass>
+            <input type="password" name = "pin0" onKeyup="autotab(this, document.pass.pin1)" class= "inputs" maxlength="1" />
+            <input type="password" name = "pin1" onKeyup="autotab(this, document.pass.pin2)" class= "inputs" maxlength="1"/>
+            <input type="password" name = "pin2" onKeyup="autotab(this, document.pass.pin3)" class= "inputs" maxlength="1"/>
+            <input type="password" name = "pin3" class= "inputs" maxlength="1"/>
+        </form> 
           </center>
       </div>
     </div>
